@@ -2,8 +2,7 @@
 
 > Adicione estilos da ABNT ao Microsoft Word ™
 
-👉 Dica rápida de como adicionar estilos da Associação Brasileira de Normas Técnicas (ABNT) ao Microsoft Word, para uso de estilos nesse padrão.
-
+👉 Dica rápida de como adicionar estilos da Associação Brasileira de Normas Técnicas (ABNT) ao Microsoft Word.
 
 ## Como fazer:
 
