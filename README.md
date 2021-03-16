@@ -18,7 +18,7 @@
 
 ### Pelo Mac OS
 
-1. Clique com o botão direito no ícone do Microsoft Word e escolha "Mostrar conteúdo do pacote".
+1. Clique com o botão direito no ícone do Microsoft Word e escolha "Mostrar conteúdo do pacote". Isso fará abrir a pasta onde fica o Microsoft Word.
 2. Entre na subpasta `Contents/Resources/Style/`.
 3. Baixe os arquivos `.XSL` disponíveis nesse projeto salvando na pasta acima. Links:
    * [`ABNT_Author.XSL`](https://github.com/thiagodp/abnt-no-word/raw/main/ABNT_Author.XSL)
