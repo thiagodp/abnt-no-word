@@ -2,7 +2,7 @@
 
 > Adicione estilos da ABNT ao Microsoft Word ™
 
-👉 Dica rápida de como adicionar estilos da Associação Brasileira de Normas Técnicas (ABNT) ao Microsoft Word.
+👉 Como utilizar estilos da Associação Brasileira de Normas Técnicas (ABNT) ao Microsoft Word.
 
 ## Como fazer:
 
@@ -36,13 +36,20 @@
   * Word 2013: `%userprofile%\AppData\Roaming\Microsoft\Bibliography\Style`
   * Word 2016: `%AppData%\Microsoft\Templates\LiveContent\16\Managed\Word Document Bibliography Styles`
 
-### Notas de copyright
+## Versões anteriores
+
+- [v2022](https://github.com/thiagodp/abnt-no-word/releases/tag/v2022): versão antes da [NBR 10520/2023](https://github.com/thiagodp/abnt-no-word/pull/1).
+
+
+## Veja também
+
+- Baixe outros estilos em [codingo/BibWord](https://github.com/codingo/BibWord) (GitHub). Infelizmente o projeto BibWord original, [no CodePlex](https://archive.codeplex.com/?p=bibword), parece ter sido descontinuado.
+
+## Notas de copyright
+
 - Os estilos disponibilizados por esse projeto são parte de um projeto de código aberto (opensource) chamado [BibWord](https://archive.codeplex.com/?p=bibword).
 - Microsoft Word, Windows, Community e Office 365 são marcas registradas da Microsoft Corporation.
 - Mac OS é uma marca registrada da Apple Inc.
-
-## Veja também 
-- Baixe outros estilos em [codingo/BibWord](https://github.com/codingo/BibWord) (GitHub). Infelizmente o projeto BibWord original, [no CodePlex](https://archive.codeplex.com/?p=bibword), parece ter sido descontinuado.
 
 ## Aviso
 
