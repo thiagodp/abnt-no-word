@@ -1,49 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 
-     Stylesheet for Microsoft Word 2007/2008/2010 Bibliography formatting.
-     
-     Author(s): Yves Dhondt (yves.dhondt@gmail.com)
-               
-     Copyright: Copyright (c) 2009 Yves Dhondt
+<!--
+Stylesheet for Microsoft Word Bibliography formatting.
 
-                Permission is hereby granted, free of charge, to any person obtaining a
-                copy of this software and associated documentation files (the "Software"),
-                to deal in the Software without restriction, including without limitation
-                the rights to use, copy, modify, merge, publish, distribute, sublicense,
-                and/or sell copies of the Software, and to permit persons to whom the
-                Software is furnished to do so, subject to the following conditions:
+MIT License
 
-                The above copyright notice and this permission notice shall be included 
-                in all copies or substantial portions of the Software.
+Copyright (c) 2009 Yves Dhondt.
+Copyright (c) 2021-today Thiago Delgado Pinto, Caio Alexandre Troti Caetano, Rodolfo Guimarães V. S., and contributors.
 
-                THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-                IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-                FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-                THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-                LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-                FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-                DEALINGS IN THE SOFTWARE.
-  -->
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
 
 <xsl:stylesheet version="1.0"
-                xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography"
-                xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-                xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+  xmlns:b="http://schemas.openxmlformats.org/officeDocument/2006/bibliography"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:msxsl="urn:schemas-microsoft-com:xslt" >
 
   <!-- Variable containing all necessary data for a certain style of bibliography. -->
   <xsl:variable name="data">
+
     <general>
-      <stylename>ABNT NBR 6023:2002*</stylename>
-      <version>2009.05.23</version>
-      <author>Yves Dhondt (yves.dhondt@gmail.com)</author>
-      <description>An implementation of the ABNT NBR 6023/2002 style.</description>
-      <URL>http://bibliography.codeplex.com/updateStyle?id=ABNT1</URL>
-      <comments>
-      </comments>
+      <stylename>ABNT NBR 14724:2025 - Author</stylename>
+      <version>2025.04.01</version>
+      <author>Yves Dhondt, Thiago Delgado Pinto, Caio Alexandre Troti Caetano, Rodolfo Guimarães V. S.</author>
+      <description>Style for ABNT's NBR 14724:2025 (2025.04.01) that incorportates NBR 6023:2018 (2018.11.14) and NBR 10520:2023 (2023.07.19)</description>
+      <URL>https://github.com/thiagodp/abnt-no-word</URL>
+      <comments></comments>
       <display_errors>yes</display_errors>
-      <citation_as_link>no</citation_as_link>
+      <citation_as_link>yes</citation_as_link>
     </general>
+
     <importantfields>
       <source type="ArticleInAPeriodical">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -149,7 +151,75 @@
         <b:ImportantField>b:ProductionCompany</b:ImportantField>
         <b:ImportantField>b:Year</b:ImportantField>
       </source>
+      <source type="Misc">
+        <b:ImportantField>b:Author/b:Composer/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Author/b:Performer/b:NameList</b:ImportantField>
+        <b:ImportantField>b:PublicationTitle</b:ImportantField>
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Month</b:ImportantField>
+        <b:ImportantField>b:Day</b:ImportantField>
+        <b:ImportantField>b:City</b:ImportantField>
+        <b:ImportantField>b:CountryRegion</b:ImportantField>
+        <b:ImportantField>b:StateProvince</b:ImportantField>
+        <b:ImportantField>b:Publisher</b:ImportantField>
+      </source>
+	  <source type="Case">
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:CaseNumber</b:ImportantField>
+        <b:ImportantField>b:Court</b:ImportantField>
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Month</b:ImportantField>
+        <b:ImportantField>b:Day</b:ImportantField>
+      </source>
+	  <source type="DocumentFromInternetSite">
+        <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:InternetSiteTitle</b:ImportantField>
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Month</b:ImportantField>
+        <b:ImportantField>b:Day</b:ImportantField>
+        <b:ImportantField>b:URL</b:ImportantField>
+      </source>
+	  <source type="ElectronicSource">
+        <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:City</b:ImportantField>
+        <b:ImportantField>b:CountryRegion</b:ImportantField>
+        <b:ImportantField>b:StateProvince</b:ImportantField>
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Month</b:ImportantField>
+        <b:ImportantField>b:Day</b:ImportantField>
+      </source>
+	  <source type="Art">
+        <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Institution</b:ImportantField>
+        <b:ImportantField>b:PublicationTitle</b:ImportantField>
+        <b:ImportantField>b:City</b:ImportantField>
+      </source>
+	  <source type="Performance">
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Author/b:Writer/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Author/b:Performer/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Theater</b:ImportantField>
+        <b:ImportantField>b:City</b:ImportantField>
+        <b:ImportantField>b:StateProvince</b:ImportantField>
+        <b:ImportantField>b:CountryRegion</b:ImportantField>
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Month</b:ImportantField>
+        <b:ImportantField>b:Day</b:ImportantField>
+      </source>
+	  <source type="Interview">
+        <b:ImportantField>b:Author/b:Interviewee/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Title</b:ImportantField>
+        <b:ImportantField>b:Author/b:Interviewer/b:NameList</b:ImportantField>
+        <b:ImportantField>b:Year</b:ImportantField>
+        <b:ImportantField>b:Month</b:ImportantField>
+        <b:ImportantField>b:Day</b:ImportantField>
+      </source>
     </importantfields>
+
     <citation>
       <openbracket>(</openbracket>
       <closebracket>)</closebracket>
@@ -196,7 +266,29 @@
       <source type="Thesis">
         <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
+      <source type="Misc">
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+      </source>
+      <source type="Case">
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+      </source>
+      <source type="DocumentFromInternetSite">
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+      </source>
+      <source type="ElectronicSource">
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+      </source>
+      <source type="Art">
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+      </source>
+      <source type="Performance">
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+      </source>
+      <source type="Interview">
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+      </source>
     </citation>
+
     <bibliography>
       <columns>1</columns>
       <source type="Placeholder">
@@ -303,14 +395,71 @@
         </column>
         <sortkey>{%Author:2|Title:a%} {%Year%} {%Title%}</sortkey>
       </source>
+      <source type="Misc">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %MiscType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponivel em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+        </column>
+        <sortkey>{%Author:2|Title:a%} {%Year%} {%Title%}</sortkey>
+      </source>
+      <source type="Case">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %CaseType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponivel em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+        </column>
+        <sortkey>{%Author:2|Title:a%} {%Year%} {%Title%}</sortkey>
+      </source>
+      <source type="DocumentFromInternetSite">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %DocumentFromInternetSiteType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponivel em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+        </column>
+        <sortkey>{%Author:2|Title:a%} {%Year%} {%Title%}</sortkey>
+      </source>
+      <source type="ElectronicSource">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %ElectronicSourceType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponivel em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+        </column>
+        <sortkey>{%Author:2|Title:a%} {%Year%} {%Title%}</sortkey>
+      </source>
+      <source type="Art">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %ArtType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponivel em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+        </column>
+        <sortkey>{%Author:2|Title:a%} {%Year%} {%Title%}</sortkey>
+      </source>
+      <source type="Performance">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %PerformanceType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponivel em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+        </column>
+        <sortkey>{%Author:2|Title:a%} {%Year%} {%Title%}</sortkey>
+      </source>
+      <source type="Interview">
+        <column id="1">
+          <halign>left</halign>
+          <valign>top</valign>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %InterviewType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponivel em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+        </column>
+        <sortkey>{%Author:2|Title:a%} {%Year%} {%Title%}</sortkey>
+      </source>
     </bibliography>
+
     <namelists>
       <list name="citation" id="1">
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate%}</corporate>
-        <first_person>{%Last%}</first_person>
-        <other_persons>{%Last%}</other_persons>
+        <first_person>{%Last:f%}</first_person>
+        <other_persons>{%Last:f%}</other_persons>
         <separator_between_if_two> e </separator_between_if_two>
         <separator_between_if_more_than_two>, </separator_between_if_more_than_two>
         <separator_before_last> e </separator_before_last>
@@ -324,8 +473,8 @@
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate:u%}</corporate>
-        <first_person>{%Last:u%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</first_person>
-        <other_persons>{%Last:u%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</other_persons>
+        <first_person>{%Last:f%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</first_person>
+        <other_persons>{%Last:f%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</other_persons>
         <separator_between_if_two>; </separator_between_if_two>
         <separator_between_if_more_than_two>; </separator_between_if_more_than_two>
         <separator_before_last>; </separator_before_last>
@@ -339,8 +488,8 @@
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate:u%}</corporate>
-        <first_person>{%Last:u%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</first_person>
-        <other_persons>{%Last:u%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</other_persons>
+        <first_person>{%Last:f%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</first_person>
+        <other_persons>{%Last:f%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</other_persons>
         <separator_between_if_two>; </separator_between_if_two>
         <separator_between_if_more_than_two>; </separator_between_if_more_than_two>
         <separator_before_last>; </separator_before_last>
@@ -354,8 +503,8 @@
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate%}</corporate>
-        <first_person>{%Last:u%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</first_person>
-        <other_persons>{%Last:u%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</other_persons>
+        <first_person>{%Last:f%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</first_person>
+        <other_persons>{%Last:f%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</other_persons>
         <separator_between_if_two>; </separator_between_if_two>
         <separator_between_if_more_than_two>; </separator_between_if_more_than_two>
         <separator_before_last>; </separator_before_last>
@@ -377,15 +526,15 @@
         <max_number_of_persons_to_display>3</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>2</number_of_persons_to_display_if_more_than_max>
         <overflow>, &lt;i&gt;et al.&lt;/i&gt;</overflow>
-        <single_suffix></single_suffix>
-        <multi_suffix></multi_suffix>
+        <single_suffix> (Trad.)</single_suffix>
+        <multi_suffix> (Trads.)</multi_suffix>
       </list>
       <list name="compilerAsAuthor" id="6">
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate:u%}</corporate>
-        <first_person>{%Last:u%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</first_person>
-        <other_persons>{%Last:u%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</other_persons>
+        <first_person>{%Last:f%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</first_person>
+        <other_persons>{%Last:f%}{, %First:adpsu|Middle:adpsu%{ %Middle:adpsu%}}</other_persons>
         <separator_between_if_two>; </separator_between_if_two>
         <separator_between_if_more_than_two>; </separator_between_if_more_than_two>
         <separator_before_last>; </separator_before_last>
@@ -407,17 +556,18 @@
         <max_number_of_persons_to_display>10</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>10</number_of_persons_to_display_if_more_than_max>
         <overflow> e outros</overflow>
-        <single_suffix></single_suffix>
-        <multi_suffix></multi_suffix>
+        <single_suffix> (Perf.)</single_suffix>
+        <multi_suffix> (Perfs.)</multi_suffix>
       </list>
     </namelists>
+
     <strings>
       <months>
         <month number="1">jan.</month>
         <month number="2">fev.</month>
         <month number="3">mar.</month>
         <month number="4">abr.</month>
-        <month number="5">maio</month>
+        <month number="5">mai.</month>
         <month number="6">jun.</month>
         <month number="7">jul.</month>
         <month number="8">ago.</month>
@@ -427,6 +577,7 @@
         <month number="12">dez.</month>
       </months>
     </strings>
+
     <extensions>
       <source type="ArticleInAPeriodical">
         <yearsuffix>{%Author:1|Title%}{, %Year%}</yearsuffix>
@@ -464,13 +615,36 @@
       <source type="Thesis">
         <yearsuffix>{%Author:1|Title%}{, %Year%}</yearsuffix>
       </source>
+      <source type="Misc">
+        <yearsuffix>{%Author:1|Title%}{, %Year%}</yearsuffix>
+      </source>
+      <source type="Case">
+        <yearsuffix>{%Author:1|Title%}{, %Year%}</yearsuffix>
+      </source>
+      <source type="DocumentFromInternetSite">
+        <yearsuffix>{%Author:1|Title%}{, %Year%}</yearsuffix>
+      </source>
+      <source type="ElectronicSource">
+        <yearsuffix>{%Author:1|Title%}{, %Year%}</yearsuffix>
+      </source>
+      <source type="Art">
+        <yearsuffix>{%Author:1|Title%}{, %Year%}</yearsuffix>
+      </source>
+      <source type="Performance">
+        <yearsuffix>{%Author:1|Title%}{, %Year%}</yearsuffix>
+      </source>
+      <source type="Interview">
+        <yearsuffix>{%Author:1|Title%}{, %Year%}</yearsuffix>
+      </source>
     </extensions>
+
     <overrides>
       <titles>
         <delimeter>:</delimeter>
-        <articles>-A-THE-AN-OS-</articles>
+        <articles>-A-AN-AS-O-OS-UM-UNS-UMA-UMAS-THE</articles>
       </titles>
     </overrides>
+
   </xsl:variable>
 
   <!-- Indicates that all output will be in the HTML format. -->
@@ -498,7 +672,7 @@
           </xsl:when>
           <xsl:otherwise>
             <!-- Fallback method : use a dummy version number of 1. -->
-            <xsl:text>1</xsl:text>
+            <xsl:text>4</xsl:text>
           </xsl:otherwise>
         </xsl:choose>
       </xsl:when>
@@ -1195,7 +1369,7 @@
 
   <!-- Helper function for format-source. This function recursively
        resolves the highest level of the first conditional branch of
-       the format string. It will return the entire string with at 
+       the format string. It will return the entire string with at
        least one less conditional branch.
     -->
   <xsl:template name="format-source-part-2">
@@ -1393,7 +1567,7 @@
                               <xsl:value-of select="msxsl:node-set($data)/overrides/titles/articles"/>
                             </xsl:when>
                             <xsl:otherwise>
-                              <xsl:text>-A-AN-THE-</xsl:text>
+                              <xsl:text>-A-AN-AS-O-OS-UM-UNS-UMA-UMAS-THE-</xsl:text>
                             </xsl:otherwise>
                           </xsl:choose>
                         </xsl:with-param>
@@ -1646,7 +1820,7 @@
 
   <!-- Helper function for format-person. This function recursively
        resolves the highest level of the first conditional branch of
-       the format string. It will return the entire string with at 
+       the format string. It will return the entire string with at
        least one less conditional branch.
     -->
   <xsl:template name="format-person-part-2">
@@ -2050,7 +2224,7 @@
             <overflow></overflow>
             <single_suffix></single_suffix>
             <multi_suffix></multi_suffix>
-          </format>         
+          </format>
       -->
     <xsl:param name="params" />
 
@@ -2899,7 +3073,7 @@
     <!-- Delimeter between a title and its subtitle. By default, this is ':'. -->
     <xsl:param name="delimeter" select="':'"/>
     <!-- Leading articles which can be ignored when the titles get sorted. -->
-    <xsl:param name="articles" select="'-A-AN-THE-'"/>
+    <xsl:param name="articles" select="'-A-AN-AS-O-OS-UM-UNS-UMA-UMAS-THE'"/>
     <!-- Options string. (u = uppercase, l = lowercase, a = put xxxwords at the end, m = main title, s = subtitle, f = first word uppercase) -->
     <xsl:param name="options"/>
 
@@ -3170,8 +3344,8 @@
     <!-- String with characters to convert. -->
     <xsl:param name="string"/>
 
-    <!-- 
-         Word 2007 does not handle text-transform when importing html. 
+    <!--
+         Word 2007 does not handle text-transform when importing html.
          A text-transform element set to uppercase works but it is not
          supported.
       -->

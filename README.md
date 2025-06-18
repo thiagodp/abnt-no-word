@@ -4,7 +4,11 @@
 
 👉 Como utilizar estilos da Associação Brasileira de Normas Técnicas (ABNT) no Microsoft Word.
 
-## Como fazer:
+
+## Como adicionar estilos:
+
+Este projeto mantém arquivos XSL que podem ser adicionados ao pacote Microsoft Office para que seja possível usar estilos da ABNT.
+Basta baixá-los, colocá-los no diretório correto e reabrir o Word para que seja possível visualizá-los. Eles irão aparecer na opção "Estilo" da aba "Referências".
 
 ### Pelo Windows
 
@@ -35,10 +39,14 @@
   * Word 2010: `%programfiles%\Microsoft Office\Office14\Bibliography\Style`
   * Word 2013: `%userprofile%\AppData\Roaming\Microsoft\Bibliography\Style`
   * Word 2016: `%AppData%\Microsoft\Templates\LiveContent\16\Managed\Word Document Bibliography Styles`
+  * Word 2019: `%AppData%\Microsoft\Bibliography\Style`
+  * Word para Microsoft 365: `%AppData%\Microsoft\Bibliography\Style`
 
-## Versões anteriores
+## Versões
 
-- [v2022](https://github.com/thiagodp/abnt-no-word/releases/tag/v2022): versão antes da [NBR 10520/2023](https://github.com/thiagodp/abnt-no-word/pull/1).
+- **Atual** - atualizada com NBR 14724:2025 (2025.04.01), NBR 6023:2018 (2018.11.14) e NBR 10520:2023 (2023.07.19).
+- [v2023](https://github.com/thiagodp/abnt-no-word/releases/tag/v2023) - Incorpora a NBR 10520:2023 (2023.07.19).
+- [v2022](https://github.com/thiagodp/abnt-no-word/releases/tag/v2022) - Versão antes da [NBR 10520/2023](https://github.com/thiagodp/abnt-no-word/pull/1).
 
 
 ## Veja também
