@@ -480,7 +480,7 @@ SOFTWARE.
         <separator_before_last>; </separator_before_last>
         <max_number_of_persons_to_display>3</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
-        <overflow> et al.</overflow>
+        <overflow> &lt;i&gt;et al.&lt;/i&gt;</overflow>
         <single_suffix></single_suffix>
         <multi_suffix></multi_suffix>
       </list>
@@ -495,7 +495,7 @@ SOFTWARE.
         <separator_before_last>; </separator_before_last>
         <max_number_of_persons_to_display>3</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
-        <overflow> et al.</overflow>
+        <overflow> &lt;i&gt;et al.&lt;/i&gt;</overflow>
         <single_suffix> (Ed.)</single_suffix>
         <multi_suffix> (Eds.)</multi_suffix>
       </list>
@@ -540,7 +540,7 @@ SOFTWARE.
         <separator_before_last>; </separator_before_last>
         <max_number_of_persons_to_display>3</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
-        <overflow> et al.</overflow>
+        <overflow> &lt;i&gt;et al.&lt;/i&gt;</overflow>
         <single_suffix> (Comp.)</single_suffix>
         <multi_suffix> (Comps.)</multi_suffix>
       </list>
