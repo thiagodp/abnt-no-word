@@ -44,6 +44,8 @@ Basta baixá-los, colocá-los no diretório correto e reabrir o Word para que se
 
 ## Versões
 
+> 👉 [Saiba sobre as últimas atualizações realizadas](https://github.com/thiagodp/abnt-no-word/commits/main/)
+
 - **Atual** - atualizada com NBR 14724:2025 (2025.04.01), NBR 6023:2018 (2018.11.14) e NBR 10520:2023 (2023.07.19).
 - [v2023](https://github.com/thiagodp/abnt-no-word/releases/tag/v2023) - Incorpora a NBR 10520:2023 (2023.07.19).
 - [v2022](https://github.com/thiagodp/abnt-no-word/releases/tag/v2022) - Versão antes da [NBR 10520/2023](https://github.com/thiagodp/abnt-no-word/pull/1).
