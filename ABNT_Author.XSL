@@ -473,8 +473,8 @@ SOFTWARE.
         <single_prefix></single_prefix>
         <multi_prefix></multi_prefix>
         <corporate>{%Corporate:u%}</corporate>
-        <first_person>{%Last:f%}{, %First|Middle%{ %Middle%}}</first_person>
-        <other_persons>{%Last:f%}{, %First|Middle%{ %Middle%}}</other_persons>
+        <first_person>{%Last:u%}{, %First|Middle%{ %Middle%}}</first_person>
+        <other_persons>{%Last:u%}{, %First|Middle%{ %Middle%}}</other_persons>
         <separator_between_if_two>; </separator_between_if_two>
         <separator_between_if_more_than_two>; </separator_between_if_more_than_two>
         <separator_before_last>; </separator_before_last>
