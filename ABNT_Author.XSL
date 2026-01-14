@@ -750,7 +750,7 @@ SOFTWARE.
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
       </head>
       <body>
-        <p>
+        <p class="MsoBibliography">
 
           <!-- Display the open bracket if this is the first citation. -->
           <xsl:if test="/b:Citation/b:FirstAuthor">
