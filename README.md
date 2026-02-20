@@ -55,9 +55,9 @@ Basta baixá-los, colocá-los no diretório correto e reabrir o Word para que se
 
 - Baixe outros estilos em [codingo/BibWord](https://github.com/codingo/BibWord) (GitHub). Infelizmente o projeto BibWord original, [no CodePlex](https://archive.codeplex.com/?p=bibword), parece ter sido descontinuado.
 
-## Observações e notas de copyright
+## Observações e licença
 
-- _Esse projeto não se responsabiliza pela realização dos procedimentos descritos ou uso dos arquivos providos. Faça ou use por sua conta e risco._
-- Os estilos disponibilizados por esse projeto são parte de um projeto de código aberto (opensource) chamado [BibWord](https://archive.codeplex.com/?p=bibword).
-- Microsoft Word, Windows, Community e Office 365 são marcas registradas da Microsoft Corporation. Mac OS é uma marca registrada da Apple Inc.
+- _Esse projeto não se responsabiliza pela realização dos procedimentos descritos ou pelo uso dos arquivos providos. Faça ou use por sua conta e risco._
+- Windows, Word e Office 365 são marcas registradas da Microsoft Corporation. Mac OS é marca registrada da Apple Inc.
 - Este projeto é regido pela [licença MIT](LICENSE).
+
