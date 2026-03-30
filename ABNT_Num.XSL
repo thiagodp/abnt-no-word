@@ -57,6 +57,8 @@ SOFTWARE.
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:City</b:ImportantField>
         <b:ImportantField>b:StandardNumber</b:ImportantField>
+        <b:ImportantField>b:Volume</b:ImportantField>
+        <b:ImportantField>b:Issue</b:ImportantField>
       </source>
       <source type="Book">
         <b:ImportantField>b:Author/b:Author/b:NameList</b:ImportantField>
@@ -141,6 +143,8 @@ SOFTWARE.
         <b:ImportantField>b:Year</b:ImportantField>
         <b:ImportantField>b:City</b:ImportantField>
         <b:ImportantField>b:StandardNumber</b:ImportantField>
+        <b:ImportantField>b:Department</b:ImportantField>
+        <b:ImportantField>b:ThesisType</b:ImportantField>
       </source>
       <source type="SoundRecording">
         <b:ImportantField>b:Author/b:Composer/b:NameList</b:ImportantField>
@@ -245,7 +249,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%}{. %Title%}{. &lt;b&gt;%PeriodicalTitle%&lt;/b&gt;}{, %City%}{, %Volume%}{, n. %Issue%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ %Pages::%.}{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%}{. %Title%}{. &lt;b&gt;%PeriodicalTitle%&lt;/b&gt;}{, %City%}{, %Volume%}{, n. %Issue%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ %Pages::%.}{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Book">
@@ -257,7 +261,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Editor:3|Compiler:6|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ Tradução de %Translator:5%.}{ %Edition%. ed.}{ %City|"[S.l.]"%: %Publisher|"[s.n.]"%,}{ v. %Volume%,}{ %Year%{%YearSuffix%}.}{ %Pages::% p.}.{ ISBN %StandardNumber%.}{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Editor:3|Compiler:6|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ Tradução de %Translator:5%.}{ %Edition%. ed.}{ %City|"[S.l.]"%: %Publisher|"[s.n.]"%,}{ v. %Volume%,}{ %Year%{%YearSuffix%}.}{ %Pages::% p.}.{ ISBN %StandardNumber%.}{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="BookSection">
@@ -269,7 +273,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|BookAuthor:2|Title:f%.}{ %Title%.}{ In: {%BookAuthor:4|Editor:4|"______"%} &lt;b&gt;%BookTitle:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %BookTitle:s%}.}{ Tradução de %Translator:5%.}{ %Edition%. ed.}{ %City|"[S.l.]"%: %Publisher|"[s.n.]"%,}{ v. %Volume%,}{ %Year%{%YearSuffix%}.}{ Cap. %ChapterNumber%,}{ %Pages:p. :p. %}.{ ISBN %StandardNumber%.}{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|BookAuthor:2|Title:f%.}{ %Title%.}{ &lt;i&gt;In:&lt;/i&gt; {%BookAuthor:4|Editor:4|"______"%} &lt;b&gt;%BookTitle:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %BookTitle:s%}.}{ Tradução de %Translator:5%.}{ %Edition%. ed.}{ %City|"[S.l.]"%: %Publisher|"[s.n.]"%,}{ v. %Volume%,}{ %Year%{%YearSuffix%}.}{ Cap. %ChapterNumber%,}{ %Pages:p. :p. %}.{ ISBN %StandardNumber%.}{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="ConferenceProceedings">
@@ -281,7 +285,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%}{. &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}}{. %ConferenceName%}{. %City|"[S.l.]"%: %Publisher|"[s.n.]"%}{. {{%Day% }%Month:s% }%Year%{%YearSuffix%}}{. %Pages:p. :p. %}.{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%}{. &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}}{. &lt;i&gt;In:&lt;/i&gt; %ConferenceName%}{. %City|"[S.l.]"%: %Publisher|"[s.n.]"%}{. {{%Day% }%Month:s% }%Year%{%YearSuffix%}}{. %Pages:p. :p. %}.{ Disponivel em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Film">
@@ -305,7 +309,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%}{. %Title%}{. &lt;b&gt;%InternetSiteTitle:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %InternetSiteTitle:s%}}{, %City%}{, p. %Pages::%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ ISSN %StandardNumber%.}{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%}{. %Title%}{. &lt;b&gt;%InternetSiteTitle:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %InternetSiteTitle:s%}}{, %City%}{, p. %Pages::%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ ISSN %StandardNumber%.}{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="JournalArticle">
@@ -317,7 +321,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%}{. %Title%}{. &lt;b&gt;%JournalName%&lt;/b&gt;}{, %City%}{, v. %Volume%}{, n. %Issue%}{, p. %Pages::%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ ISSN %StandardNumber%.}{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%}{. %Title%}{. &lt;b&gt;%JournalName%&lt;/b&gt;}{, %City%}{, v. %Volume%}{, n. %Issue%}{, p. %Pages::%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ ISSN %StandardNumber%.}{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Patent">
@@ -329,7 +333,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Inventor:2|Title:f%}{. &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}}{. %PatentNumber%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Inventor:2|Title:f%}{. &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}}{. %PatentNumber%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Report">
@@ -341,7 +345,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title%.}{ &lt;b&gt;%Title%&lt;/b&gt;.}{ %Institution|Department%.}{ %City|"[S.l.]"%}{, %Pages:p. :p. %}{. %Year%{%YearSuffix%}}{. (%StandardNumber%)}.{ %Comments%.}</format>
+          <format>{%Author:2|Title%.}{ &lt;b&gt;%Title%&lt;/b&gt;.}{. %Year%{%YearSuffix% }.}{ %ThesisType% –}{ %Department%.}{ %Institution%.}{ %City|"[S.l.]"%}{, %Pages:p. :p. %}{. %Year%{%YearSuffix%}}{. (%StandardNumber%)}{ Disponivel em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="SoundRecording">
@@ -377,7 +381,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %ThesisType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %ThesisType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Misc">
@@ -389,7 +393,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %MiscType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %MiscType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Case">
@@ -401,7 +405,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %CaseType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %CaseType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="DocumentFromInternetSite">
@@ -413,7 +417,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %DocumentFromInternetSiteType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %DocumentFromInternetSiteType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="ElectronicSource">
@@ -425,7 +429,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %ElectronicSourceType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %ElectronicSourceType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Art">
@@ -437,7 +441,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %ArtType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %ArtType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Performance">
@@ -449,7 +453,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %PerformanceType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %PerformanceType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Interview">
@@ -461,7 +465,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %InterviewType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: &lt;%URL%&gt;.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%.}{ &lt;b&gt;%Title:mr%&lt;/b&gt;{&lt;b&gt;:&lt;/b&gt; %Title:s%}.}{ %Year:r%{%YearSuffix:r%}.}{ %Pages%p.}{ %InterviewType%.}{ %Department%{, %Institution%{, %City%}}}{ %Institution%{, %City%}}{ %City%}{, %Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
     </bibliography>
@@ -523,7 +527,7 @@ SOFTWARE.
         <separator_before_last>; </separator_before_last>
         <max_number_of_persons_to_display>3</max_number_of_persons_to_display>
         <number_of_persons_to_display_if_more_than_max>1</number_of_persons_to_display_if_more_than_max>
-        <overflow>, et al.</overflow>
+        <overflow>, &lt;i&gt;et al.&lt;/i&gt;</overflow>
         <single_suffix></single_suffix>
         <multi_suffix></multi_suffix>
       </list>
@@ -654,7 +658,7 @@ SOFTWARE.
     <overrides>
       <titles>
         <delimeter>:</delimeter>
-        <articles>-A-THE-AN-OS-</articles>
+        <articles>-A-AN-AS-O-OS-UM-UNS-UMA-UMAS-THE</articles>
       </titles>
     </overrides>
 
