@@ -1,3 +1,5 @@
+[![Versão](https://img.shields.io/github/last-commit/thiagodp/abnt-no-word?style=for-the-badge)](https://github.com/thiagodp/abnt-no-word/commit/)
+
 # abnt-no-word
 
 > Adicione estilos da ABNT ao Microsoft Word ™
