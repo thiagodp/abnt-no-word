@@ -55,6 +55,7 @@ Basta baixá-los, colocá-los no diretório correto e reabrir o Word para que se
 
 ## Veja também
 
+- [NBR 6023:2818](https://www3.eco.unicamp.br/biblioteca/images/arquivos/pdf/NBR6023-2018-Ref.pdf), sobre elaboração de Referências
 - Baixe outros estilos em [codingo/BibWord](https://github.com/codingo/BibWord) (GitHub). Infelizmente o projeto BibWord original, [no CodePlex](https://archive.codeplex.com/?p=bibword), parece ter sido descontinuado.
 
 ## Observações e licença

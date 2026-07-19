@@ -249,7 +249,7 @@ SOFTWARE.
         <column id="2">
           <halign>left</halign>
           <valign>top</valign>
-          <format>{%Author:2|Title:f%}{. %Title%}{. &lt;b&gt;%PeriodicalTitle%&lt;/b&gt;}{, %City%}{, v. %Volume%}{, n. %Issue%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ p. %Pages::%.}{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
+          <format>{%Author:2|Title:f%}{. %Title%}{. &lt;b&gt;%PeriodicalTitle%&lt;/b&gt;}{, %City%}{, v. %Volume%}{, n. %Issue%}{, p. %Pages::%}{, {{%Day% }%Month:s% }%Year%{%YearSuffix%}}.{ Disponível em: %URL%.}{ Acesso em: {{%DayAccessed% }%MonthAccessed:s% }%YearAccessed%.}{ %Comments%.}</format>
         </column>
       </source>
       <source type="Book">
