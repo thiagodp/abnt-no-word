@@ -235,61 +235,61 @@ SOFTWARE.
         <format>[%Tag%]</format>
       </source>
       <source type="ArticleInAPeriodical">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Book">
-        <format>{%CitationPrefix%}{%Author:1|Editor:1|Compiler:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Editor:1|Compiler:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="BookSection">
-        <format>{%CitationPrefix%}{%Author:1|BookAuthor:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|BookAuthor:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="ConferenceProceedings">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Film">
-        <format>{%CitationPrefix%}{%Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="InternetSite">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="JournalArticle">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Patent">
-        <format>{%CitationPrefix%}{%Inventor:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Inventor:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Report">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="SoundRecording">
-        <format>{%CitationPrefix%}{%Composer:1|Performer:1|Title|AlbumTitle%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Composer:1|Performer:1|Title|AlbumTitle%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Standard">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Thesis">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Misc">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Case">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="DocumentFromInternetSite">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="ElectronicSource">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Art">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Performance">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Interview">
-        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%Author:1|Title%}{, %Year%}{%YearSuffix%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
     </citation>
 

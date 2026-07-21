@@ -168,61 +168,61 @@ SOFTWARE.
         <format>[%Tag%]</format>
       </source>
       <source type="ArticleInAPeriodical">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Book">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="BookSection">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="ConferenceProceedings">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Film">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="InternetSite">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="JournalArticle">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Patent">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Report">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="SoundRecording">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Standard">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Thesis">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Misc">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Case">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="DocumentFromInternetSite">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="ElectronicSource">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Art">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Performance">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
       <source type="Interview">
-        <format>{%CitationPrefix%}{%RefOrder%}{, p. %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
+        <format>{%CitationPrefix%}{%RefOrder%}{, %CitationPages:p. :p. %}{, v. %CitationVolume%}{%CitationSuffix%}</format>
       </source>
     </citation>
 
