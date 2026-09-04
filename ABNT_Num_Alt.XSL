@@ -43,7 +43,7 @@ SOFTWARE.
       <URL>https://github.com/thiagodp/abnt-no-word</URL>
       <comments></comments>
       <display_errors>yes</display_errors>
-      <citation_as_link>yes</citation_as_link>
+      <citation_as_link>no</citation_as_link>
     </general>
 
     <importantfields>
